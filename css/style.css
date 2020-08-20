@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.main {
+    background-color:rosybrown;
+    color:red;
+    text-align:center
+} 
+
+#headline {
+    background-color:orange;
+    text-align-last: left;
+    color:blue ;
+    height: 100px;
+    width: 100px;
+    
+}
+.px{
+    font-size: 20px;
+    text-align: left
+}
+.em{
+    font-size: 1.2em;
+    text-align:right
+}
+
+
+table {
+  border-color:#0000ff ; 
+  border-style:dashed ;  
+  border-width:1px ; 
+}  
+td{
+  border-bottom:1px solid black
+}
