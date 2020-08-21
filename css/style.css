@@ -3,7 +3,7 @@
 .main {
     background-color:rosybrown;
     color:red;
-    text-align:center
+    text-align:center;
 } 
 
 #headline {
@@ -11,8 +11,45 @@
     text-align-last: left;
     color:blue ;
     height: 100px;
-    width: 100px;
+    width: 100px:
     
+}
+#table1{
+  border: solid orange ;
+  color: yellow;
+}
+#table2{
+ border: dotted
+}
+.parent {
+  background:pink ;
+  border: solid 2px red;
+  padding:10px;
+  color: blue;
+  text-align: center ;
+
+}
+.parent2 {
+  background:gold;
+  border: dotted 2px green;
+  padding:10px;
+  color:purple;
+  
+  
+}
+.parent3{
+  background:lightblue;
+  border: dashed 2px red;
+  padding:10px;
+  color:white;
+
+}
+table{
+  border-collapse: collapse;
+
+}
+.child{
+
 }
 .px{
     font-size: 20px;
@@ -24,11 +61,4 @@
 }
 
 
-table {
-  border-color:#0000ff ; 
-  border-style:dashed ;  
-  border-width:1px ; 
-}  
-td{
-  border-bottom:1px solid black
-}
+
