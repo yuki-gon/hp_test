@@ -17,6 +17,7 @@ table{
     background-color:pink;
     width: 200px;
     height: 250px;
+    display: inline-block;
     position: fixed;
     top:50;
     right:0;
@@ -33,6 +34,26 @@ table{
     background-color:lightblue ;
     width: 60px;
     height: 60px;
-    clear: left;
+    display:inline-block;
+    background: -webkit-gradient(circle, right top, right bottom, color-stop(0%,lightblue), color-stop(100%,rgb(176, 176, 209)));
+    background: -webkit-linear-gradient(top,  lightblue 0%,rgb(176, 176, 209) 100%);
+    background: linear-gradient(to bottom,  lightblue 0%, rgb(176 176 209 ) 100%);
+    color:white;
+    border: solid 2px black;
+    border-radius: 5px;
+    text-decoration: none ;
+    padding:10px;
+    position:fixed;
+    bottom:0px;
+    left:10px;
+    text-align:center;
 
+}
+
+.red:hover{
+    background: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,blue),color-stop(100%,rgb(176, 176, 209)));
+    background: -webkit-linear-gradient(top,  blue 0%,rgb(176, 176, 209) 100%);
+    background: linear-gradient(to bottom,  blue 0%.rgb(176, 176, 209) 100%);
+  
 }

@@ -50,7 +50,7 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1ede4));
   background: -webkit-linear-gradient(top,  #ffffff 0%,#f1ede4 100%);
   background: linear-gradient(to bottom,  #ffffff 0%, #f1ede4 100%);
-  color:#b7a0777;
+  color:#b7a077;
   padding: 10px;
   border: 1px solid #b7a077;
   border-radius: 5px;
@@ -64,7 +64,7 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b7a077),color-stop(100%,#e2cda7));
   background: -webkit-linear-gradient(top,  #b7a077 0%,#e2cda7 100%);
   background: linear-gradient(to bottom,  #b7a077 0%.#e2cda7 100%);
-  color: #fff;
+  color: #fff000;
 }
 table{
   border-collapse: collapse;
