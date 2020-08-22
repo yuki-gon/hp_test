@@ -59,13 +59,17 @@ table{
   
 @media screen and (max-width:480px){ 
         .green{
-            max-width:480px
+            max-width:100%
         }
         .yellow{
             display: none;
         }
         .pink{
-            display:inline-block
-            
+            display:inline-block;
+            width: 200px;
+            height:60px;
+            bottom:0px;
+            right:10px;
+
         }
     }
