@@ -62,12 +62,12 @@ table{
             max-width:100%
         }
         .yellow{
-            display: none;
+            width:100%;
         }
         .pink{
             display:inline-block;
             width: 200px;
-            height:60px;
+            height:100px;
             bottom:0px;
             right:10px;
 
