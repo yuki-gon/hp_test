@@ -1,0 +1,19 @@
+
+@charset "UTF-8";
+
+.orange{
+    background:orange;
+    padding:10px;
+    float: left;
+}
+.purple{
+    background:lightgray;
+    padding:10px;
+    float: left;
+}
+@media screen and (max-width:480px){ 
+   .purple{
+       margin-top: 10px;
+   }
+}
+
