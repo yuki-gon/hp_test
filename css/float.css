@@ -61,5 +61,11 @@ table{
         .green{
             max-width:480px
         }
-
+        .yellow{
+            display: none;
+        }
+        .pink{
+            display:inline-block
+            
+        }
     }
