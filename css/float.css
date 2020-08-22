@@ -55,5 +55,11 @@ table{
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,blue),color-stop(100%,rgb(176, 176, 209)));
     background: -webkit-linear-gradient(top,  blue 0%,rgb(176, 176, 209) 100%);
     background: linear-gradient(to bottom,  blue 0%.rgb(176, 176, 209) 100%);
-  
 }
+  
+@media screen and (max-width:480px){ 
+        .green{
+            max-width:480px
+        }
+
+    }
