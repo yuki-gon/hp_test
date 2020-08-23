@@ -19,7 +19,7 @@ table{
     height: 250px;
     display: inline-block;
     position: fixed;
-    top:50;
+    bottom:0;
     right:0;
 }
 .green{
@@ -27,7 +27,7 @@ table{
     width: 500px;
     height: 600px;
     text-align: center;
-    float: left
+    float: left;
 }
 
 .red{
@@ -56,7 +56,19 @@ table{
     background: -webkit-linear-gradient(top,  blue 0%,rgb(176, 176, 209) 100%);
     background: linear-gradient(to bottom,  blue 0%.rgb(176, 176, 209) 100%);
 }
-  
+
+.orange{
+    background:orange;
+    width:96px;
+    height:54px;
+    float:left;
+    border: solid 2px black;
+}
+.purple{
+    background:lightgray;
+    float:left;
+    border:solid 2px black;
+}
 @media screen and (max-width:480px){ 
         .green{
             max-width:100%
@@ -67,7 +79,7 @@ table{
         .pink{
             display:inline-block;
             width: 200px;
-            height:150px;
+            height:10px;
             bottom:0px;
             right:10px;
 

@@ -10,6 +10,7 @@
     background:lightgray;
     padding:10px;
     float: left;
+    margin:10px;
 }
 @media screen and (max-width:480px){ 
    .purple{
