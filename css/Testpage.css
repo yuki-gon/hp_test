@@ -17,3 +17,13 @@
     float: left;
 
 }
+
+@media screen and (max-width:480px){ 
+    .charaseet{
+        margin-top: 10px;
+        max-width:100%
+        }
+
+    }
+ }
+ 
