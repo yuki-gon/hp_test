@@ -11,14 +11,78 @@
 }
 
 .charaseet{
-    border:solid 2px black;
+    border-style:groove;
+    border-width:10px;
     width:600px;
-    padding: 10px;
+    padding: 8px;
     float: left;
-    font-family: "MS ゴシック";
+    font-family: fantasy;
+    margin:10px;
 
 }
 
+.info{
+  padding: 10px;
+}
+
+.skill{
+  border-style: ridge;
+  border-width:4px;
+}
+
+#bloodhound{
+    background-color: darkorange;
+}
+
+#gibraltor{
+    background-color:lightgrey;
+}
+
+#lifeline{
+    background-color:whitesmoke;
+}
+
+#pathfinder{
+    background-color:lightblue;
+}
+
+#wraith{
+    background-color:lightslategrey;
+}
+
+#bangarole{
+    background-color:burlywood;
+}
+
+#caustic{
+   background-color:rgb(107, 231, 107);
+}
+
+#mirage{
+   background-color:rgb(223, 223, 22);
+}
+#octane{
+   background-color:greenyellow;
+}
+
+#wattoson{
+   background-color: skyblue;
+}
+#crypto{
+  background-color:rgb(59, 138, 59);
+}
+
+#revenant{
+  background-color:firebrick;
+}
+
+#loba{
+  background-color:goldenrod;
+}
+
+#rampart{
+  background-color:rgb(228, 109, 11);
+}
 
 header {
     padding:10px;
@@ -87,22 +151,21 @@ header {
     transform: translateX(-105%);
   }
   
-  /*チェックが入ったらもろもろ表示*/
   #nav-input:checked ~ #nav-close {
-    display: block;/*カバーを表示*/
+    display: block;
     opacity: .5;
   }
   
   #nav-input:checked ~ #nav-content {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);/*中身を表示（右へスライド）*/
+    transform: translateX(0%);
     box-shadow: 6px 0 25px rgba(0,0,0,.15);
   }
 
 @media screen and (max-width:480px){ 
     .charaseet{
         margin-top: 10px;
-        width:100%
+        width:100
         }
 
 }
