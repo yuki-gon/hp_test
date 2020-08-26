@@ -13,7 +13,7 @@
 .charaseet{
     border-style:groove;
     border-width:10px;
-    width:600px;
+    width:500px;
     padding: 8px;
     float: left;
     font-family: fantasy;
@@ -166,6 +166,7 @@ header {
     .charaseet{
         margin: 10px;
         max-width:100% ;
+        width:auto;
 
         }
 
