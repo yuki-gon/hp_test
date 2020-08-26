@@ -21,6 +21,11 @@
 
 }
 
+table{
+  border-style:inset;
+  
+}
+
 .info{
   padding: 10px;
 }
