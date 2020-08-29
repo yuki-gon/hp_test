@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta neame="robots" content="noindex">
+    <link href="../css/samplepage.css">
+  </head>
+  <body>
+    <form action="cgi-bin/formmail.cgi" method="post">
+        <textarea name="kanso" rows="4" cols="40">ここに感想を記入してください。</textarea><br>
+        <input type="submit" value="送信"><input type="reset" value="リセット">
+        </form>
+
+    <a class="sample" href="~">BUTTON</a>
+<br>
+
+<a href="sample/iframe_a1.htm" target="sample">A1．2112年3月9日</a><br>
+<a href="sample/iframe_a2.htm" target="sample">A2．2112年9月3日</a><br>
+<a href="sample/iframe_a3.htm" target="sample">A3．2211年3月9日</a><br>
+<a href="sample/iframe_a4.htm" target="sample">A4．2212年9月3日</a><br>
+<a href="sample/iframe_q.htm" target="sample">ヒント</a><br>
+<iframe src="sample/iframe_q.htm" name="sample" width="200" height="150">
+この部分はインラインフレームを使用しています。
+</iframe>
+<br>
+<select name="blood">
+    <option value="A">A型</option>
+    <option value="B">B型</option>
+    <option value="O">O型</option>
+    <option value="AB">AB型</option>
+</select>
+<br>
+<select name="songs" size="15">
+    <option value="1">a</option>
+    <option value="2">b</option>
+    <option value="3">c</option>
+    <option value="4">d</option>
+    <option value="5">e</option>
+    <option value="6">f</option>
+    <option value="7">g</option>
+    <option value="8">h</option>
+    <option value="9">i</option>
+    <option value="10">j</option>
+    <option value="11">k</option>
+    <option value="12">l</option>
+    <option value="13">m</option>
+    <option value="14">n</option>
+    <option value="15">o</option>
+</select>
+
+<form action="cgi-bin/abc.cgi" method="POST">
+<p>
+<input type="radio" name="hyouka" value="good" checked="checked">良い
+<input type="radio" name="hyouka" value="bad">悪い
+</p>
+<p>
+<input type="submit" value="送信する">
+</p>
+
+</form>
+
+<p>
+<input type="checkbox" name="abc" value="1" checked="checked">「A」
+<input type="checkbox" name="abc" value="2">「B」
+<input type="checkbox" name="abc" value="3">「C」
+</p>
+<br>
+<p>
+<input type="file" name="sousin">
+</p>
+
+  </body>

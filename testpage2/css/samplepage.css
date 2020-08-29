@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.sample {
+    display: inline-block;
+    padding:5px 10px;
+    color: #FFF;
+    text-decoration :none;
+    background: #87b9eb;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 -4px 5px -2px #6d95ce inset;
+    border-radius: 2px;
+    transition: .3s;
+  }
+  
+  .sample:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  }
