@@ -296,21 +296,57 @@ header {
     transform: translateX(330px);
   }
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width:414px){
 
     .index_btn{
       display: inline-block;
       color:black;
       background-color: white;
       border: 2px solid black;
+      width: auto;
+      height: auto;
+      margin: 10px;
 
     }
-
-    .container3{
+    .index_btn::before,
+    .index_btn::after {
+      display: none;
+    }
+  
+    
+    .next_btn{
       display: inline-block;
-      color: white;
-      background-color: skyblue;
+      color:black;
+      background-color: white;
+      border: 2px solid black;
+      width: auto ;
+      height: auto;
+      margin: 10px;
+      
+      
     }
+
+    .back_btn {
+      display: inline-block;
+      color: black;
+      background-color: white;
+      border: 2px solid black;
+      width: auto ;
+      height: auto;
+      margin: 10px;
+
+    }
+
+  
+    
+    .next_btn:after{
+      display: none;
+    }
+    
+    .back_btn:after{
+      display: none;
+    }
+
    
     .bnt-massage{
       display: inline-block;

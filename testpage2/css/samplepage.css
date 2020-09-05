@@ -34,11 +34,11 @@
       padding:10px;
       margin: 10px;
       vertical-align: middle;
-      background:skyblue;
+      background: #ffffff;
       font-weight:bold;
       color:#FFF;
   }
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width:414px){
       
   }
