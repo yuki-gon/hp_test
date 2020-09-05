@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta neame="robots" content="noindex">
+    <link href="testpage3.css" rel="stylesheet" type="text/css">
+ 
+    <title></title>
+  </head>
+  <body>
+    <input type="button" value="文字の表示" id="btn_1">
+    
+    <form name="form_count"><input name="counter" type="text" size="10"></form>
+
+<script type="text/javascript">
+<!--
+count = 0; //カウントの初期値
+timerID = setInterval('countup()',1000); //1秒毎にcountup()を呼び出し
+
+function countup() {
+	count++;
+	document.form_count.counter.value = count;
+}
+-->
+</script>
+    
+    <script src="testpage3.js"></script>
+  </body>
+  </html>
