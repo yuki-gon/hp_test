@@ -115,7 +115,7 @@ header {
   }
 
   .index_btn {
-   /* display: inline-block;*/
+    display: inline-block;
     width: 200px;
     text-align: center;
     background-color: black;
@@ -137,7 +137,7 @@ header {
   .index_btn::before,
   .index_btn::after {
     content: "";
-    /*display: block;*/
+    display: block;
     background-color:white;
     width: 50%;
     height: 100%;
