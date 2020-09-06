@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.table_test{
+    background-color:red;
+}
+
+@media screen and (max-width:375px){
+
+    .table_test{
+        background-color: blue;
+    }
+
+}
