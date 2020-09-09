@@ -233,40 +233,34 @@ header {
   @media screen and (max-width:375px){
 
     .index_btn{
-      display: none;
+      display: inline;
       color:black;
       background-color: white;
       border: 2px solid black;
-      width: auto;
-      height: auto;
       margin: 10px;
 
     }
-    .index_btn::before,
+    /*.index_btn::before,
     .index_btn::after {
       display: none;
-    }
+    }*/
   
     
     .next_btn{
-      display: none;
+      display: inline;
       color:black;
       background-color: white;
       border: 2px solid black;
-      width: auto ;
-      height: auto;
       margin: 10px;
       
       
     }
 
     .back_btn {
-      display: none;
+      display: inline;
       color: black;
       background-color: white;
       border: 2px solid black;
-      width: auto ;
-      height: auto;
       margin: 10px;
 
     }
@@ -283,7 +277,7 @@ header {
 
    
     .bnt-massage{
-      display: none;
+      display: inline-block;
       background-color: white;
       color:black;
       widows: 100%;
@@ -297,6 +291,7 @@ header {
       position: fixed;
       left:10px;
       top:50px;
+      display: inline-block;
     }
     
     .nav-unshown {
