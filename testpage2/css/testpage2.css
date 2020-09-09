@@ -268,7 +268,7 @@ header {
 
     }
 
-    .index_btn::after{
+    .index_btn:after{
       display: none;
     }
     
