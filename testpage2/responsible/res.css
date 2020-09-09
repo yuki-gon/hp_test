@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 #nav-drawer {
-    position: fixed;
-    left:10px;
-    top:50px;
+  position: fixed;
+  left:10px;
+  top:50px;
+  z-index: 9999998;
   }
   
   .nav-unshown {
@@ -22,7 +23,7 @@
     height: 5px;
     width: 30px;
     border-radius: 3px;
-    background: blue;
+    background: rgb(89, 231, 46);
     display: block;
     content: '';
     cursor: pointer;
@@ -60,6 +61,7 @@
     transition: .3s ease-in-out;
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);
+
   }
   
   /*チェックが入ったらもろもろ表示*/
@@ -87,9 +89,55 @@
     
 
 }
-
 .index_btn {
-    display: inline-block;
+  display: inline-block; 
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.index_btn span {
+  position: relative;
+}
+
+.index_btn::before,
+.index_btn::after {
+  content: "";
+  display: block;
+  background-color:green;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+}
+.index_btn::before {
+  left: 0;
+}
+.index_btn::after {
+  right: 0;
+}
+
+.index_btn:hover:before,
+.index_btn:hover:after {
+  width: 0;
+  background-color: yellow;
+}
+
+.index_btn:hover {
+  color: #FFF;
+}
+
+.index_btn_2 {
+    display: inline-block; 
     width: 200px;
     text-align: center;
     background-color: black;
@@ -99,18 +147,16 @@
     text-decoration: none;
     font-weight: bold;
     padding: 10px 10px;
-    /*border-radius: 4px;*/
+    border-radius: 4px;
     position: relative;
-    z-index: ;
   }
   
-  .index_btn span {
+  .index_btn_2 span {
     position: relative;
-    z-index: ;
   }
   
-  .index_btn::before,
-  .index_btn::after {
+  .index_btn_2::before,
+  .index_btn_2::after {
     content: "";
     display: block;
     background-color:white;
@@ -120,37 +166,40 @@
     top: 0;
     transition: .2s;
   }
-  .index_btn::before {
+  .index_btn_2::before {
     left: 0;
   }
-  .index_btn::after {
+  .index_btn_2::after {
     right: 0;
   }
   
-  .index_btn:hover:before,
-  .index_btn:hover:after {
-    width: 0;
-    background-color: #FFF;
-  }
-  
-  .index_btn:hover {
-    color: #FFF;
-  }
-
-  .hyouji{
-      z-index: -1;
-  }
-
   .nomal_btn{
     display: inline-block;
     width: 200px;
     text-align: center;
-    background-color: black;
+    background-color: white;
     border: 2px solid black;
     font-size: 16px;
-    color: black;
+    color: black !important; 
     text-decoration: none;
     font-weight: bold;
     padding: 10px 10px;
+    border-radius: 40px;
+    position: relative;
+  }
+
+  .nomal_btn span{
+    position: relative;
+  }
+
+  .nomal_btn::before,
+  .nomal_btn::after {
+    content: "";
+    display: block;
+    background-color:white;
+    width: 50%;
+    height: 100%;
+    position: absolute;
 
   }
+
