@@ -268,7 +268,9 @@ header {
 
     }
 
-  
+    .index_btn::after{
+      display: none;
+    }
     
     .next_btn:after{
       display: none;
@@ -277,7 +279,6 @@ header {
     .back_btn:after{
       display: none;
     }
-
    
     .bnt-massage{
       display: block;
