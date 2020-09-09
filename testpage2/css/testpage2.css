@@ -240,8 +240,9 @@ header {
       border: 2px solid black;
       border-radius: 0px;
       margin: 10px;
-      font-size: 8px;
+      font-size: 16px;
       z-index:3;
+      position: static;
 
 
     }
@@ -259,7 +260,8 @@ header {
       margin: 10px;
       font-size: 16px;
       z-index: 3;
-   
+      position: static;
+    
       
     }
 
@@ -271,6 +273,7 @@ header {
       margin: 10px;
       font-size: 16px;
       z-index: 3;
+      position: static;
 
 
     }
