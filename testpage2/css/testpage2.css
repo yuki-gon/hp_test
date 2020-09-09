@@ -161,6 +161,8 @@ header {
     border: 2px solid black;
     position: relative;
     overflow: hidden;
+    padding: 10px 10px;
+
     z-index: 1;
   }
   .next_btn:after{
