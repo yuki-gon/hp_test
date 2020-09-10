@@ -1,15 +1,20 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta neame="robots" content="noindex">
-    <link href="../css/samplepage.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="dispArea" class="guideArea">
-        <p id="guide">後からデザインを変更可能です</p>
-        <input type="text" id="textBox" value="こんにちは">
-      </div>
-      <button type="button" onclick="cssTest()">CSS変更</button>
-  </body>
-  </html>
+    <head>
+      <meta charset='utf-8'>
+      <meta lang='en'>
+      <link rel='stylesheet' href='css/style_org.css'>
+      <link rel='stylesheet' href='css/style.css' disabled='true' id='style-a'>
+      <link rel='stylesheet' href='css/darkmode.css' disabled='false' id='style-b'>
+      <script src="js/script.js"></script>  
+         <title></title>
+    </head>
+    <body>
+      <p id="test_text">bbb</p>
+
+      <form action="" class="darkmode_button">
+        <input type="button" value="DARKMODE" onclick="changestylesheet_right();">
+        <input type="button" value="LIGHTMODE" onclick="changestylesheet_dark();">
+      </form>
+
+    </body>
+</html>
