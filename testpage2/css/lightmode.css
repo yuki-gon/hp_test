@@ -26,9 +26,13 @@
     scroll-margin-left: 10px;
     padding:10px;
     text-align: center;
-    
+ }
 
+ #honbun{
+  font-size: large;
 }
+
+
 
 .SS{
     margin:10px;

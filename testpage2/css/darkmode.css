@@ -11,6 +11,10 @@ body{
   color: white;
 }
 
+#honbun{
+  font-size: large;
+}
+
 #synopsis{
     border-top-style: solid ;
     border-right-style:none;
