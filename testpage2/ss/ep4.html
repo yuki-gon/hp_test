@@ -5,6 +5,9 @@
     <meta neame="robots" content="noindex">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <link  href="../css/testpage2.css" rel="stylesheet">
+    <link rel='stylesheet' href='../css/darkmode.css' disabled='true' id='style-a'>
+    <link rel='stylesheet' href='../css/lightmode.css' disabled='false' id='style-b'>
+    <script src="../js/darkmode.js"></script>  
 
     <div id="nav-drawer">
         <input id="nav-input" type="checkbox" class="nav-unshown">
@@ -59,6 +62,11 @@
   <h1 id="title" >
     <p>第四話</p>
   </h1>
+
+  <form action="" class="darkmode_button">
+    <input type="button" value="DARKMODE" onclick="changestylesheet_dark();">
+    <input type="button" value="LIGHTMODE" onclick="changestylesheet_right();">
+  </form>
 
 <table id="mokuji">
     <tr>
