@@ -266,6 +266,7 @@ header {
       font-size: 16px;
       z-index: 3;
       position: static;
+      margin: 10px 0px;
 
 
     }
@@ -356,6 +357,10 @@ header {
       transition: .3s ease-in-out;
       -webkit-transform: translateX(-105%);
       transform: translateX(-105%);
+    }
+
+    .darkmode_button{
+      display: none;
     }
     
     /*チェックが入ったらもろもろ表示*/
