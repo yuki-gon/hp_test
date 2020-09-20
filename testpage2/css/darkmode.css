@@ -200,9 +200,9 @@ header {
     display: inline-block;
     width: 300px;
     text-align: center;
-    background-color: black;
+    background-color: gray;
     font-size: 16px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 16px 10px 16px;
