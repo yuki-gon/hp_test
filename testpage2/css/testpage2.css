@@ -230,6 +230,10 @@ header {
     transform: translateX(330px);
   }
 
+  #lightmode_btn {
+    display: none;
+  }
+
   @media screen and (max-width:375px){
 
     .index_btn{
@@ -364,7 +368,7 @@ header {
     
     /*チェックが入ったらもろもろ表示*/
     #nav-input:checked ~ #nav-close {
-      display: block;/*カバーを表示*/
+      display: block;
       opacity: .5;
     }
     
