@@ -7,7 +7,22 @@
     <link  href="../css/testpage2.css" rel="stylesheet">
     <link rel='stylesheet' href='../css/darkmode.css' disabled='true' id='style-dark'>
     <link rel='stylesheet' href='../css/lightmode.css' disabled='false' id='style-light'>
-    <script src="../js/darkmode.js"></script>  
+    <script src="../js/darkmode.js"></script> 
+    <script>
+        var params = (new URL(document.location)).searchParams;
+        var hikisu = params.get('hikisu');
+        if (hikisu == 'light') {
+            document.write('true :', hikisu);
+            /*document.getElementById('style-dark').disabled = true;*/
+            document.getElementById('style-light').disabled = true;
+        } else {
+            document.write('false :', hikisu);
+            document.getElementById('style-dark').disabled = false;
+            /*document.getElementById('style-light').disabled = false;*/
+        }
+    </script> 
+
+ 
 
     <div id="nav-drawer">
         <input id="nav-input" type="checkbox" class="nav-unshown">
@@ -65,7 +80,7 @@
 <body>
     
   <h1 id="title" >
-    <p>第四話</p>
+    <p>第五話</p>
   </h1>
 
 <div class="darkmode_btn">
@@ -79,14 +94,14 @@
     <tr>
         <td>
             <div class="container3">
-                <a href="ep3.html" class="back_btn">BACK</a>
+                <a href="ep4.html" class="back_btn">BACK</a>
         </td>
         <td>
             <a href="../index.html" class="index_btn"><span>HOME<span></a>
             </td>
         <td>
             <div class="container2">
-                <a href="ep5.html" class="next_btn">NEXT</a>
+                <a href="#" class="next_btn">NEXT</a>
         </td>
     </tr>
 </table>
@@ -95,7 +110,7 @@
   
 <div id="honbun">
     <p>
-        2040/10/62
+        2040/10/526
     </p>
 </div>
 
@@ -111,14 +126,14 @@
     <tr>
         <td>
             <div class="container3">
-                <a href="ep3.html" class="back_btn">BACK</a>
+                <a href="ep4.html" class="back_btn">BACK</a>
             </td>
         <td>
             <a href="../index.html" class="index_btn"><span>HOME<span></a>
             </td>
         <td>
             <div class="container2">
-                <a href="ep5.html" class="next_btn">NEXT</a>
+                <a href="#" class="next_btn">NEXT</a>
         </td>
     </tr>
 </table>

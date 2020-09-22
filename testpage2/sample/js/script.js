@@ -3,8 +3,8 @@ function changestylesheet_right() {
 //    test_text_tmp = document.getElementById('test_text');
 //    test_text_tmp.innerHTML = '<h1>れんしゅうううう</h1>';
 
-    document.getElementById('style-a').disabled = true;
-    document.getElementById('style-b').disabled = false;
+    document.getElementById('style-dark').disabled = true;
+    document.getElementById('style-light').disabled = false;
 }
 
 function changestylesheet_dark() {
@@ -12,8 +12,8 @@ function changestylesheet_dark() {
     //    test_text_tmp = document.getElementById('test_text');
     //    test_text_tmp.innerHTML = '<h1>れんしゅうううう</h1>';
 
-    document.getElementById('style-a').disabled = false;
-    document.getElementById('style-b').disabled = true;
+    document.getElementById('style-dark').disabled = false;
+    document.getElementById('style-light').disabled = true;
     
     }
     
