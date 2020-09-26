@@ -7,8 +7,21 @@
     <link  href="../css/testpage2.css" rel="stylesheet">
     <link rel='stylesheet' href='../css/darkmode.css' disabled='true' id='style-dark'>
     <link rel='stylesheet' href='../css/lightmode.css' disabled='false' id='style-light'>
-    <script src="../js/darkmode.js"></script>  
-
+    <script src="../js/darkmode.js"></script> 
+    <script>
+        var params = (new URL(document.location)).searchParams;
+        var hikisu = params.get('hikisu');
+        if (hikisu == 'dark') {
+            document.write('true :', hikisu);
+            document.getElementById('style-dark').disabled = false;
+            document.getElementById('style-light').disabled = true;
+        } else {
+            document.write('false :', hikisu);
+            document.getElementById('style-dark').disabled = true;
+            document.getElementById('style-light').disabled = false;
+        }
+    </script> 
+    
     <div id="nav-drawer">
         <input id="nav-input" type="checkbox" class="nav-unshown">
         <label id="nav-open" for="nav-input"><span></span></label>

@@ -17,6 +17,19 @@ function hensu_test() {
 
 function hensu_test2(page_no) {
     let hikisu = document.getElementById("btn-b");
-    hikisu.href ="ss/ep" + page_no + ".html?hikisu=light";
+    if(document.getElementById('style-light').disabled){
+        //trueであれば非表示なのでlightが非表示だからdark
+        hikisu.href ="ss/ep" + page_no + ".html?hikisu=dark";
+    }else{
+        hikisu.href ="ss/ep" + page_no + ".html?hikisu=light";
+    }
 }
 
+function hensu_test3(page_no) {
+    let hikisu = document.getElementById("btn-c");
+    if(document.getElementById('style-light').disabled){
+        hikisu.href ="ss/ep" + page_no + ".html?hikisu=dark";
+    }else{
+        hikisu.href ="ss/ep" + page_no + ".html?hikisu=light";
+    }
+}
