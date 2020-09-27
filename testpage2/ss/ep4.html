@@ -1,27 +1,30 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta neame="robots" content="noindex">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <link  href="../css/testpage2.css" rel="stylesheet">
-    <link rel='stylesheet' href='../css/darkmode.css' disabled='true' id='style-dark'>
-    <link rel='stylesheet' href='../css/lightmode.css' disabled='false' id='style-light'>
-    <script src="../js/darkmode.js"></script> 
-    <script>
-        var params = (new URL(document.location)).searchParams;
-        var hikisu = params.get('hikisu');
-        if (hikisu == 'dark') {
-            document.write('true :', hikisu);
-            document.getElementById('style-dark').disabled = false;
-            document.getElementById('style-light').disabled = true;
-        } else {
-            document.write('false :', hikisu);
-            document.getElementById('style-dark').disabled = true;
-            document.getElementById('style-light').disabled = false;
-        }
-    </script> 
+    <head>
+        <meta charset="utf-8">
+        <meta neame="robots" content="noindex">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link  href="../css/testpage2.css" rel="stylesheet">
+        <link rel='stylesheet' href='../css/darkmode.css' disabled='true' id='style-dark'>
+        <link rel='stylesheet' href='../css/lightmode.css' disabled='false' id='style-light'>
+        <script src="../js/darkmode.js"></script> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script>
+            var params = (new URL(document.location)).searchParams;
+            var hikisu = params.get('hikisu');
+            if (hikisu == 'dark') {
+                document.write('true :', hikisu);
+                document.getElementById('style-dark').disabled = false;
+                document.getElementById('style-light').disabled = true;
+            } else {
+                document.write('false :', hikisu);
+                document.getElementById('style-dark').disabled = true;
+                document.getElementById('style-light').disabled = false;
+            }
+            </script> 
 
+</head>
+<body>
     <div id="nav-drawer">
         <input id="nav-input" type="checkbox" class="nav-unshown">
         <label id="nav-open" for="nav-input"><span></span></label>
@@ -74,8 +77,6 @@
     </div>
 
 
-</head>
-<body>
     
   <h1 id="title" >
     <p>第四話</p>
@@ -92,14 +93,16 @@
     <tr>
         <td>
             <div class="container3">
-                <a href="ep3.html" class="back_btn">BACK</a>
+                <a href="" onclick=" hensu_test4('3' , 'btn-3' );"  class="back_btn" id="btn-3">
+                        BACK</a>
         </td>
         <td>
-            <a href="../index.html" class="index_btn"><span>HOME<span></a>
+            <a href="" onclick="hensu_home( 'btn-h' );" class="index_btn" id="btn-h"><span>HOME<span></a>
             </td>
         <td>
             <div class="container2">
-                <a href="ep5.html" class="next_btn">NEXT</a>
+                <a href="" onclick=" hensu_test4('5' , 'btn-5' );"  class="next_btn" id="btn-5">
+                    NEXT</a>
         </td>
     </tr>
 </table>

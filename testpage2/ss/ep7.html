@@ -1,6 +1,5 @@
 <!doctype html>
-<html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta neame="robots" content="noindex">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -8,6 +7,7 @@
     <link rel='stylesheet' href='../css/darkmode.css' disabled='true' id='style-dark'>
     <link rel='stylesheet' href='../css/lightmode.css' disabled='false' id='style-light'>
     <script src="../js/darkmode.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
     <script>
         var params = (new URL(document.location)).searchParams;
         var hikisu = params.get('hikisu');
@@ -20,9 +20,11 @@
             document.getElementById('style-dark').disabled = true;
             document.getElementById('style-light').disabled = false;
         }
-    </script> 
+        </script> 
 
 
+</head>
+<body>
     <div id="nav-drawer">
         <input id="nav-input" type="checkbox" class="nav-unshown">
         <label id="nav-open" for="nav-input"><span></span></label>
@@ -75,11 +77,9 @@
     </div>
 
 
-</head>
-<body>
     
   <h1 id="title" >
-    <p>第五話</p>
+    <p>第七話</p>
   </h1>
 
 <div class="darkmode_btn">
@@ -88,28 +88,30 @@
         <input type="button" value="LIGHTMODE" onclick="changestylesheet_right();">
       </form>
 </div>
-
 <table id="mokuji">
     <tr>
         <td>
             <div class="container3">
-                <a href="ep4.html" class="back_btn">BACK</a>
+                <a href="" onclick=" hensu_test4('6' , 'btn-6' );"  class="back_btn" id="btn-6">
+                        BACK</a>
         </td>
         <td>
-            <a href="../index.html" class="index_btn"><span>HOME<span></a>
+            <a href="" onclick="hensu_home( 'btn-h' );" class="index_btn" id="btn-h"><span>HOME<span></a>
             </td>
         <td>
             <div class="container2">
-                <a href="#" class="next_btn">NEXT</a>
+                <a href="#" class="next_btn" id="btn-7">
+                    NEXT</a>
         </td>
     </tr>
+
 </table>
 
 
   
 <div id="honbun">
     <p>
-        2040/10/526
+       ----/--/----
     </p>
 </div>
 
@@ -125,7 +127,7 @@
     <tr>
         <td>
             <div class="container3">
-                <a href="ep4.html" class="back_btn">BACK</a>
+                <a href="ep6.html" class="back_btn">BACK</a>
             </td>
         <td>
             <a href="../index.html" class="index_btn"><span>HOME<span></a>

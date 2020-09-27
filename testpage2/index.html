@@ -7,7 +7,21 @@
     <link  href="css/testpage2.css" rel="stylesheet">
     <link rel='stylesheet' href='css/darkmode.css' disabled='true' id='style-dark'>
     <link rel='stylesheet' href='css/lightmode.css' disabled='false' id='style-light'>
-    <script src="js/darkmode.js"></script>  
+    <script src="js/darkmode.js"></script> 
+    <script>
+      var params = (new URL(document.location)).searchParams;
+      var hikisu = params.get('hikisu');
+      if (hikisu == 'dark') {
+          document.write('true :', hikisu);
+          document.getElementById('style-dark').disabled = false;
+          document.getElementById('style-light').disabled = true;
+      } else {
+          document.write('false :', hikisu);
+          document.getElementById('style-dark').disabled = true;
+          document.getElementById('style-light').disabled = false;
+      }
+    </script> 
+
 
 </head>
 <body>
@@ -17,7 +31,7 @@
 
   <table border="1" frame=hsides>  
     <P id="synopsis">
-      あらすじ
+      ★あらすじ
     </P>
   </table>
   <form action="" class="darkmode_button">
@@ -31,18 +45,18 @@
     
     <tr">
       <td>
-        <div class="hensu">
-          <a id="btn-b" href="" class="bnt-massage" onclick=" hensu_test2('1');">
-            log1
+        <div class="container4">
+          <a href=""  onclick=" hensu_test3('1' , 'btn-1' );" class="bnt-massage" id="btn-1">
+            LOG.1
             <span>2020/80/60</span>
           </a>
         </div>
         </tr>
     <tr>
       <td>
-        <div class="hensu">
-          <a id="btn-c" href="" class="bnt-massage" onclick=" hensu_test3('2');">
-            log2
+        <div class="container4">
+          <a href=""  onclick=" hensu_test3('2' , 'btn-2' );" class="bnt-massage" id="btn-2">
+            LOG.2
             <span>2020/80/60</span>
           </a>
         </div>
@@ -51,8 +65,7 @@
     <tr>
      <td>
       <div class="container4">
-        <a href="ss/ep3.html" class="bnt-massage">
-          
+        <a href=""  onclick=" hensu_test3('3' , 'btn-3' );" class="bnt-massage" id="btn-3">
           LOG.3
           <span>2040/10/03</span>
           </a>
@@ -62,7 +75,7 @@
     <tr>
      <td>
       <div class="container4">
-        <a href="ss/ep4.html" class="bnt-massage">
+        <a href=""  onclick=" hensu_test3('4' , 'btn-4' );" class="bnt-massage" id="btn-4">
           LOG.4
           <span>2040/10/62</span>
           </a>
@@ -72,7 +85,7 @@
     <tr>
      <td>
       <div class="container4">
-        <a href="ss/ep5.html" class="bnt-massage">
+        <a href=""  onclick=" hensu_test3('5' , 'btn-5' );" class="bnt-massage" id="btn-5">
           LOG.5
           <span>2040/10/526</span>
           </a>
@@ -83,47 +96,27 @@
     <tr>
       <td>
         <div class="container4">
-          <a href="ss/ep6.html?hikisu=b" class="bnt-massage">
-            LOG.6
-            <span>2040/10/526</span>
+          <a href=""  onclick=" hensu_test3('6' , 'btn-6' );" class="bnt-massage" id="btn-6">
+              LOG.6
+            <span>2040/10/852</span>
           </a>
         </div>
       </td>
     </tr>
     
-    //<div class="hensu">
-      <a id="btn-a" href="" class="button-a" onclick=" hensu_test();">BUTTON</a>
-    </div>
 
     <tr>
       <td>
-       <div class="container4">
-         <a href="ss/ep7.html?hikisu=b" class="bnt-massage" id="btn-b" onclick=" hensu_test2('7');">
+        <div class="container4">
+          <a href=""  onclick=" hensu_test3('7' , 'btn-7' );" class="bnt-massage" id="btn-7">
            LOG.7
-           <span >2040/10/526</span>
+           <span >----/--/----</span>
            </a>
          </div>
    </td>
      </tr>
 
-    <tr>
-      <td>
-       <div class="container4">
-            <a href="ss/test1.html?hikisu=556" class="bnt-massage">
-              LOG.test
-              <span>2040/10/526</span>
-            </a>
-       </div>
-     </td>
-    </tr>                 
-  </table>
-</div>
-<div class="hensu">
-  <a id="btn-b" href="" class="bnt-massage" onclick=" hensu_test2('1');">
-    log sample
-    <span>2020/80/60</span>
-  </a>
-</div>
+
 
 </body>
 </html>
