@@ -52,3 +52,12 @@ function hensu_home(id_name){
         hikisu.href="../index.html?hikisu=dark";
     }
 }
+
+function hensu_home2(id_name){
+    let hikisu = document.getElementById(id_name);
+    if(document.getElementById('style-dark').disabled){
+        hikisu.href="../index.html?hikisu=light";
+    }else{
+        hikisu.href="../index.html?hikisu=dark";
+    }
+}
