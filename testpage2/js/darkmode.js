@@ -61,3 +61,16 @@ function hensu_home2(id_name){
         hikisu.href="../index.html?hikisu=dark";
     }
 }
+    
+    var params = (new URL(document.location)).searchParams;
+    var hikisu = params.get('hikisu');
+    if (hikisu == 'dark') {
+        document.write('true :', hikisu);
+        document.getElementById('style-dark').disabled = false;
+        document.getElementById('style-light').disabled = true;
+    } else {
+        document.write('false :', hikisu);
+        document.getElementById('style-dark').disabled = true;
+        document.getElementById('style-light').disabled = false;
+    }
+    
