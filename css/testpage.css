@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+.menu{
+        border:solid 2px black;
+        background-color:lightgray;
+        width: 200px;
+        display:inline-block;
+        position:fixed;
+        right:0px;
+        top:50px;
+}
+
+.charaseet{
+    border-style:groove;
+    border-width:10px;
+    width:500px;
+    padding: 8px;
+    float: left;
+    font-family: fantasy;
+    margin:10px;
+
+}
+
+table{
+  border-style:inset;
+  
+}
+
+.info{
+  padding: 10px;
+}
+
+.skill{
+  border-style: ridge;
+  border-width:4px;
+}
+
+#bloodhound{
+    background-color: darkorange;
+}
+
+#gibraltor{
+    background-color:lightgrey;
+}
+
+#lifeline{
+    background-color:whitesmoke;
+}
+
+#pathfinder{
+    background-color:lightblue;
+}
+
+#wraith{
+    background-color:lightslategrey;
+}
+
+#bangarole{
+    background-color:burlywood;
+}
+
+#caustic{
+   background-color:rgb(107, 231, 107);
+}
+
+#mirage{
+   background-color:rgb(223, 223, 22);
+}
+#octane{
+   background-color:greenyellow;
+}
+
+#wattoson{
+   background-color: skyblue;
+}
+#crypto{
+  background-color:rgb(59, 138, 59);
+}
+
+#revenant{
+  background-color:firebrick;
+}
+
+#loba{
+  background-color:goldenrod;
+}
+
+#rampart{
+  background-color:rgb(228, 109, 11);
+}
+
+header {
+    padding:10px;
+    
+  }
+  
+  #nav-drawer {
+    position: fixed;
+    left:10px;
+    top:50px;
+  }
+  
+  .nav-unshown {
+    display:none;
+  }
+  
+  #nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+  }
+  
+  #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+  }
+  #nav-open span:before {
+    bottom: -8px;
+  }
+  #nav-open span:after {
+    bottom: -16px;
+  }
+  
+  #nav-close {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+  
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 90%;
+    max-width: 200px;
+    height: 100%;
+    background: lightgray;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+  }
+  
+  #nav-input:checked ~ #nav-close {
+    display: block;
+    opacity: .5;
+  }
+  
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+  }
+
+@media screen and (max-width:480px){ 
+    .charaseet{
+        margin: 10px;
+        max-width:100% ;
+        width:auto;
+
+        }
+
+}
+ 
